@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <titla>Example 1</titla>
+        <style>
+            div, main { position: static; border: solid 1px black; height: 15em; 
+                        text-align: center; width: 70%; background-color: lightskyblue; }
+            .rel { position: relative; left: 9em; top: -5em; background-color: linen; }
+            .fix { position: fixed; width: 50%; left: 5em; top: 4em; height: 7em; 
+                   background-color: mediumaquamarine; z-index: 2; }
+            .abs { position: absolute; top: 5em; left  : 20em; height: 7em; 
+                   background-color: mediumvioletred; } 
+            main { position: relative; background-color:peachpuff; height: 15em; } 
+            .stick { position: sticky; top: 10em; left: 8em; height: 15em; z-index: 1;
+                     background-color:darkorange;  } 
+
+        </style>
+    </head>
+      
+    <body>
+        <div>ELEMENT A - STATIC (NORMAL FLOW)</div>
+        <div class='rel'>ELEMENT B - RELATIVE (NORMAL FLOW - top: -5em; left: 9em;)</div>
+        <div class='fix'>ELEMENT C - FIXED (DOES NOT SCROLL - top: 4em; left: 5em;)</div>
+        <main>ELEMENT D - RELATIVE (NORMAL FLOW)<br>   
+        <div class='abs'>ELEMENT E - ABSOLUTE (top: 0em; left: 20em;)</div>
+        </main>
+        <div class='stick'>ELEMENT F - STICKY (top: 4em; left: 8em;)</div>
+        <div>ELEMENT G - STATIC (NORMAL FLOW)</div>
+        <div class='rel'>ELEMENT H - RELATIVE (NORMAL FLOW - top: -5em; left: 9em;)</div>
+    </body>
+</html>
